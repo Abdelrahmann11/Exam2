@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">    <link rel="stylesheet" href="Style/all.min.css">
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/Style.css">
+    <title>Exam 2</title>
+</head>
+<body>
+    <div id="leftMenu" style="left: -256.562px;">
+        <div class="innerLeftMenu d-flex flex-column justify-content-between">
+            <div class="Links">
+                <ul class="list-unstyled">
+                    <li class="position-relative" style="top: 400px;" onclick="showSearchContainer(); closeleftMenu()">Search</li>
+                    <li class="position-relative" style="top: 400px;" onclick="getCategories(); closeleftMenu()">Categories</li>
+                    <li class="position-relative" style="top: 400px;" onclick="getArea(); closeleftMenu()">Area</li>
+                    <li class="position-relative" style="top: 400px;" onclick="getIngredients(); closeleftMenu()">Ingredients</li>
+                    <li class="position-relative" style="top: 400px;" onclick="showContactUs(); closeleftMenu()">Contact Us</li>
+                </ul>
+            </div>
+            <div class="innerLeftMenuFooter">
+                <div class="Icons">
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+                </div>
+                <div class="innerFooter">
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="OuterleftMenu d-flex flex-column justify-content-between bg-white">
+            <img src="Images/logo.png" alt="" style="width: 50px;"/>
+            <i class="fa-solid openCloseIcon fa-bars fa-2xl" style="color: #000000;"></i>
+            <!-- <i class="fa-solid openCloseIcon fa-align-justify fa-2x" style="color: #000000;" onclick="openSideNav()"></i> -->
+            <!-- <i class="fa-solid fa-xmark fa-2xl" style="color: #000000;"></i> -->
+            <div class="d-flex flex-column">
+                <i class="fa-solid fa-globe" style="color: #000000;"></i>
+                <i class="fa-solid fa-share-nodes" style="color: #000000;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container w-75" id="SearchContainer"></div>
+    <div class="position-relative min-vh-100">
+        <div class="Loading top-0 start-0 end-0 bottom-0 justify-content-center align-items-center" style="display: none;">
+            <i class="fa fa-spinner fa-spin fa-5x" style="color: #ffffff;"></i>
+        </div>
+        <div class="container">
+            <div class="row " style="padding: 48px 0; --bs-gutter-y: 24px;" id="Data">
+                
+            </div>
+        </div>
+    </div>
+        <!-- <div class="row" style="padding-top: 24px; padding-bottom: 24px;">
+            <div class="col-md-6">
+                <input id="SearchByName" type="text" class="form-control text-white bg-transparent" placeholder="Search By Name"/>
+            </div>
+            <div class="col-md-6">
+                <input id="SearchByFLetter" type="text" class="form-control text-white bg-transparent" placeholder="Search By First Letter"/>
+            </div>
+        </div> -->
+    </div>
+    <!-- <div class="Contact d-flex align-items-center justify-content-center">
+        <div class="container text-center w-75">
+            <div class="row" style="--bs-gutter-y: 24px;">
+                <div class="col-md-6">
+                    <input oninput="NameValidation()" type="text" id="Name" class="form-control" placeholder="Enter You Name"/>
+                    <div id="NameError" class="error alert-danger w-100 d-none" style="margin-top: 8px;">Name must Start with capital letter, No sepcial charcharacters or numbers</div>
+                </div>
+                <div class="col-md-6">
+                    <input oninput="EmailValidation()" type="email" id="Email" class="form-control" placeholder="Enter You Email"/>
+                    <div id="EmailError" class="error alert-danger w-100 d-none" style="margin-top: 8px;">Your email must contain number and end with (@gmai.com) or (@hotmail.com)</div>
+                </div>
+                <div class="col-md-6">
+                    <input oninput="PhoneValidation()" type="number" id="Phone" class="form-control" placeholder="Enter You Phone"/>
+                    <div id="PhoneError" class="error alert-danger w-100 d-none" style="margin-top: 8px;">Your number must contain (010) or (011) or (012) or (015) and to be from 11 numbers</div>
+                </div>
+                <div class="col-md-6">
+                    <input oninput="AgeValidation()" type="number" id="Age" class="form-control" placeholder="Enter You Age"/>
+                    <div id="AgeError" class="error alert-danger w-100 d-none" style="margin-top: 8px;">Your age must be from (16 - 60)</div>
+                </div>
+                <div class="col-md-6">
+                    <input oninput="PassValidation()" type="password" id="Pass" class="form-control" placeholder="Enter You Password"/>
+                    <div id="PassError" class="error alert-danger w-100 d-none" style="margin-top: 8px;">Your password must be more than 8 characters (A- Z) may contain numbers</div>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" id="RePass" class="form-control" placeholder="RePassword"/>
+                    <div id="RePassError" class="error alert-danger w-100 d-none" style="margin-top: 8px;">Must match with the Password Field</div>
+                </div>
+            </div>
+            <button id="ContactSubmitBtn" disabled="true" class="btn btn-outline-danger" style="margin-top: 16px; padding-left: 8px; padding-right: 8px;">Submit</button>
+        </div>
+    </div> -->
+    <script src="/Js/jquery-3.7.1.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/js.js"></script>
+</body>
+</html>
